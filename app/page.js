@@ -1,4 +1,4 @@
-import { EmbeddedTweet } from "react-tweet";
+import { EmbeddedTweet, Tweet } from "react-tweet";
 
 // Example data for required fields
 const exampleUser = {
@@ -68,7 +68,10 @@ const newTweet = {
 export default function Home() {
   return (
     <div>
+      {/* Fake tweet */}
       <EmbeddedTweet tweet={newTweet} />
+      {/* Real tweet */}
+      <Tweet id={"1784974630274384117"} />
     </div>
   );
 }
